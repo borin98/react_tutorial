@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ButtonCustom from "./componets/ButtonCustom";
+import Modal from "./componets/Modal";
+import Backdrop from "./componets/Backdrop";
 
+/**
+ *
+ * @constructor
+ * @return
+ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My todos</h1>
+        <ButtonCustom textMsg={"Titulo maneiro"}/>
+        <ButtonCustom textMsg={"Titulo mais maneiro"}/>
+        <Modal/>
+        <Backdrop/>
     </div>
   );
 }
